@@ -1,7 +1,11 @@
 import 'dart:io';
+part 'commands.dart';
 
-class Commands {
-  Commands.init({List<String> args}) {
+class InitCommand{
+
+  InitCommand();
+
+  static void init({List<String>args}){
     if (args[0] == 'init') {
       print('criar estrutura de diretorios');
 
@@ -26,7 +30,11 @@ class Commands {
     systemTempDir
         .list(recursive: true, followLinks: false)
         .listen((FileSystemEntity entity) {
-      print(entity.path);
+      //print(entity.path);
     });
+  
+
+
+    
   }
 }

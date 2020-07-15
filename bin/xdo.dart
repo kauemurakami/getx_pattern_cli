@@ -1,20 +1,9 @@
-
-
 import 'dart:io';
-
 import 'package:args/args.dart';
+import 'package:xdo/src/commands/init_command.dart';
 
 void main(List<String> args) {
-  print(args);
 
-  final parser = ArgParser()
-  ..addOption('init', abbr: 'n');
-
-  var params = parser.parse(args);
-
-  if(params['init'] == null){
-    stderr.writeln('Comando inválido');
-    exit(2);
-  }
+ Commands.init(args: args);
 
 }

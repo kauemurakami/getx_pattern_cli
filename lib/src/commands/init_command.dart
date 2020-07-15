@@ -20,10 +20,10 @@ class InitCommand{
         }
       }
     }
-    var myDir = Directory('src');
+    var myDir = Directory('lib');
     myDir
         .exists()
-        .then((value) => value ? print('exists') : print('non exist'));
+        .then((value) => value ? print(myDir.absolute) : print('non exist'));
     var systemTempDir = Directory.current;
     // List directory contents, recursing into sub-directories,
     // but not following symbolic links.

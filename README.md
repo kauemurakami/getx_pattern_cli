@@ -5,16 +5,10 @@ Created from templates made available by Stagehand under a BSD-style
 
 ## Usage
 
-A simple usage example:
-
-```dart
-import 'package:bin/bin.dart';
-
-main() {
-  var awesome = new Awesome();
-}
+xdo init 
+xdo init -m //create structure in modules
+xdo init -p //create structure in packages
 ```
-
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].

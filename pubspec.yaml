@@ -17,4 +17,4 @@ dependencies:
   args:
 
 executables:
-  xdo :
+  xdo : 
